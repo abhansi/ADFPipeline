@@ -1,0 +1,28 @@
+{
+	"name": "DS_SYN_Trip",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AzureSynapseAnalytics",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [
+			{
+				"name": "categoryid",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "parentid",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Trip"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
